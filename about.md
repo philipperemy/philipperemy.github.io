@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Research scientist in mathematical statistics, machine learning and computer vision. Currently working at [Reactive Inc](http://reactive.co.jp), Tokyo, Japan.
 
 ### More Information
 
@@ -12,4 +12,4 @@ A place to include any other types of information that you'd like to include abo
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[premy@reactive.co.jp](mailto:premy@reactive.co.jp)
