@@ -2,7 +2,7 @@
 layout: post
 title: Correlation and Independence
 
-excerpt: Hello World!
+excerpt: Independence always implies zero correlation but the reverse might not be true. Here is a very simple example to illustrate it in R.
 ---
 
 <div class="imgcap">
@@ -10,14 +10,15 @@ excerpt: Hello World!
 <div class="thecap" style="text-align:center">This is a caption.</div>
 </div>
 
-{% highlight ruby %}
-def show
-  @widget = Widget(params[:id])
-  respond_to do |format|
-    format.html # show.html.erb
-    format.json { render json: @widget }
-  end
-end
+{% highlight r %}
+N <- 10000
+X <- rnorm(N)
+Y <- rnorm(N)
+Z <- X + Y + rnorm(N)
+
+cor(X,Z) # 0.57
+cor(Y,Z) # 0.58
+cor(X,Y) # 0.00
 {% endhighlight %}
 
 hello
