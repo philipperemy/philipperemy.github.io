@@ -10,7 +10,7 @@ excerpt: Independence always implies zero correlation but the reverse might not 
 <div class="thecap" style="text-align:center">This is a caption.</div>
 </div>
 
-{% highlight r %}
+{% highlight ruby %}
 N <- 10000
 X <- rnorm(N)
 Y <- rnorm(N)
