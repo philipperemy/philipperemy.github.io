@@ -5,7 +5,7 @@ title: Correlation and Independence
 excerpt: Independence always implies zero correlation but the reverse might not be true. Here is a very simple example to illustrate it in R.
 ---
 
-## If X and Y are correlated to a third random variable Z, does it mean that X and Y are also correlated?
+## If X and Y are correlated to a third random variable Z, does it mean that X and Y are also correlated? Answer is no.
 
 <div class="imgcap">
 <img src="/assets/independence_and_correlation/1.png" style="border:none; display: block; margin: 0 auto;">
@@ -23,7 +23,7 @@ cor(Y,Z) # 0.58
 cor(X,Y) # 0.00
 {% endhighlight %}
 
-# Can dependent variables be zero correlated?
+## Can dependent variables be zero correlated? Answer is yes.
 
 {% highlight ruby %}
 U <- rnorm(10000)
