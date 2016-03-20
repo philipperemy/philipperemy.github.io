@@ -12,6 +12,9 @@ excerpt: Independence always implies zero correlation but the reverse might not 
 <div class="thecap" style="text-align:center">Correlation plots.</div>
 </div>
 
+\\[ X \sim \mathcal{N}(0,1), Y \sim \mathcal{N}(0,1), Z = X + Y + \epsilon \text{, where } \epsilon \sim \mathcal{N}(0,1)\\]
+
+
 {% highlight ruby %}
 N <- 10000
 X <- rnorm(N)
