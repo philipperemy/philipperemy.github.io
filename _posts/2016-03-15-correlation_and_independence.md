@@ -9,7 +9,7 @@ excerpt: Independence always implies zero correlation but the reverse might not 
 
 <div class="imgcap">
 <img src="/assets/independence_and_correlation/1.png" style="border:none; display: block; margin: 0 auto;">
-<div class="thecap" style="text-align:center">This is a caption.</div>
+<div class="thecap" style="text-align:center">Correlation plots.</div>
 </div>
 
 {% highlight ruby %}
