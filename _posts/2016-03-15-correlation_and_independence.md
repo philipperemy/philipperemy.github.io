@@ -12,11 +12,12 @@ excerpt: Independence always implies zero correlation but the reverse might not 
 <div class="thecap" style="text-align:center">This is a caption.</div>
 </div>
 
-{% highlight ruby %}
+```r
 N <- 10000
 X <- rnorm(N)
 Y <- rnorm(N)
 Z <- X + Y + rnorm(N)
+```
 
 cor(X,Z) # 0.57
 cor(Y,Z) # 0.58
