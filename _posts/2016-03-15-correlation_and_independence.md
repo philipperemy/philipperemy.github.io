@@ -24,8 +24,6 @@ cor(Y,Z) # 0.58
 cor(X,Y) # 0.00
 {% endhighlight %}
 
-\\[ \mathbf{X} = \mathbf{Z} \mathbf{P^\mathsf{T}} \\]
-
 ## Can dependent variables be zero correlated? Answer is yes.
 
 {% highlight ruby %}
