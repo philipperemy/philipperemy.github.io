@@ -17,12 +17,12 @@ N <- 10000
 X <- rnorm(N)
 Y <- rnorm(N)
 Z <- X + Y + rnorm(N)
-```
+
 
 cor(X,Z) # 0.57
 cor(Y,Z) # 0.58
 cor(X,Y) # 0.00
-{% endhighlight %}
+```
 
 ## Can dependent variables be zero correlated? Answer is yes.
 
