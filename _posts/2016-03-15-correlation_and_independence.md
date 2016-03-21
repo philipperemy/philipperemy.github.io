@@ -13,8 +13,6 @@ excerpt: Independence always implies zero correlation but the reverse might not 
 </div>
 
 \\[ X \sim \mathcal{N}(0,1), Y \sim \mathcal{N}(0,1), Z = X + Y + \epsilon \text{, where } \epsilon \sim \mathcal{N}(0,1)\\]
-
-
 {% highlight ruby %}
 N <- 10000
 X <- rnorm(N)
@@ -28,6 +26,9 @@ cor(X,Y) # 0.00
 {% endhighlight %}
 
 ## Can dependent variables be zero correlated? Answer is yes.
+\begin{align} U & \sim \mathcal{N}(0,1) \\\\ cov(U, U^2) & = E[U^3] = 0\end{align}
+
+by definition of the odd central moments of the Normal Distribution. Therefore, $$U$$ and $$U^2$$ are strictly uncorrelated but they remain dependent through the function $$f(X) = X^2$$. 
 
 {% highlight ruby %}
 U <- rnorm(10000)
