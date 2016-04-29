@@ -115,7 +115,7 @@ THEANO_FLAGS='mode=FAST_RUN,device=gpu,floatX=float32,optimizer_including=cudnn'
 
 <i>Keras is a minimalist, highly modular neural networks library, written in Python and capable of running on top of either TensorFlow or Theano. It was developed with a focus on enabling fast experimentation. Being able to go from idea to result with the least possible delay is key to doing good research.</i>
 
-Let's clone the repository
+Let's clone the repository, install keras and run the MNIST program.
 
 ```
 git clone https://github.com/fchollet/keras.git
@@ -124,3 +124,32 @@ sudo python setup.py install
 cd examples
 THEANO_FLAGS='mode=FAST_RUN,device=gpu,floatX=float32,optimizer_including=cudnn' python mnist_cnn.py
 ```
+
+The output should be like this:
+
+```
+ubuntu@linux:~/keras/examples$ THEANO_FLAGS='mode=FAST_RUN,device=gpu,floatX=float32' python mnist_cnn.py 
+Using Theano backend.
+Using gpu device 0: GeForce GTX 460 (CNMeM is disabled, cuDNN not available)
+X_train shape: (60000, 1, 28, 28)
+60000 train samples
+10000 test samples
+Train on 60000 samples, validate on 10000 samples
+Epoch 1/12
+60000/60000 [==============================] - 45s - loss: 0.2570 - acc: 0.9216 - val_loss: 0.0594 - val_acc: 0.9822
+```
+
+If you remove the ```THEANO_FLAGS```, you will switch to the CPU. One way to avoid that is to create a file called ```.theanorc``` at the root of your home directory.
+
+```
+ubuntu@linux:~/keras/examples$ python mnist_cnn.py 
+Using Theano backend.
+X_train shape: (60000, 1, 28, 28)
+60000 train samples
+10000 test samples
+Train on 60000 samples, validate on 10000 samples
+Epoch 1/12
+ 9728/60000 [===>..........................] - ETA: 218s - loss: 0.6647 - acc: 0.7891
+```
+
+Not surprisingly, the CPU version is much slower than the GPU version.
