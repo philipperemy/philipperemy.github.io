@@ -76,10 +76,9 @@ THEANO_FLAGS='mode=FAST_RUN,device=gpu,floatX=float32' python gpu_test.py
 which should return:	
 
 ```
-philipperemy:~$ THEANO_FLAGS='mode=FAST_RUN,device=gpu,floatX=float32' python gpu_test.py
-Using gpu device 0: GeForce GTX 690
+Using gpu device 0: GeForce GTX 460 (CNMeM is disabled, cuDNN not available)
 [GpuElemwise{exp,no_inplace}(<CudaNdarrayType(float32, vector)>), HostFromGpu(GpuElemwise{exp,no_inplace}.0)]
-Looping 1000 times took 0.658292 seconds
+Looping 1000 times took 0.984640 seconds
 Result is [ 1.23178029  1.61879349  1.52278066 ...,  2.20771813  2.29967761
   1.62323296]
 Used the gpu
