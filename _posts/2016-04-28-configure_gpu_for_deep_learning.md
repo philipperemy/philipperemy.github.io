@@ -139,7 +139,7 @@ Epoch 1/12
 60000/60000 [==============================] - 45s - loss: 0.2570 - acc: 0.9216 - val_loss: 0.0594 - val_acc: 0.9822
 ```
 
-If you remove the ```THEANO_FLAGS```, you will switch to the CPU. One way to avoid that is to create a file called ```.theanorc``` at the root of your home directory.
+If you remove the ```THEANO_FLAGS```, you will switch to the CPU. One way to avoid that is to create a file called ```.theanorc``` at the root of your home directory (Please refer to this link on how to do it <a href="http://deeplearning.net/software/theano/library/config.html">Theano RC</a>).
 
 ```
 ubuntu@linux:~/keras/examples$ python mnist_cnn.py 
