@@ -2,7 +2,7 @@
 layout: post
 title: Bayesian Optimization Example
 
-excerpt: Easy tutorial on how to configure properly a GPU for Deep Learning with Ubuntu 14.04 x64 and GTX 460 (this card does not support of CuDNN).
+excerpt: Example on how to use Bayesian Optimization to find the global maxima of a function.
 ---
 
 In this article, I will present a very useful technique to find the global maxima of any function $$f : \mathbb{R}^n \rightarrow \mathbb{R}$$. It is called Bayesian Optimization.
