@@ -100,7 +100,7 @@ For example `Moodstocks’team` refers to the entity `Moodstocks` and it should 
 
 Secondly, we have to resolve the nouns that refers to a specific entity. Here, `Our focus` refers to `Moodstocks`. We update the rule `(Our focus; build; great image recognition tools)` by `(Moodstocks; build; great image recognition tools)`
 
-The third phase is to remove all the dominated rules and keep only the most relevant for a human. `(Moodstocks; said in; statement)` is dominated by `(Moodstocks; said in; statement on its site)` by the latter conveys more information.
+The third phase is to remove all the dominated rules and keep only the most relevant ones for a human. `(Moodstocks; said in; statement)` is dominated by `(Moodstocks; said in; statement on its site)` by the latter conveys more information.
 
 The final phase is to add some static, e.g. removing words like `also`, `thus` in the triples. `(Moodstocks ' team; will also move over; over Google 's R&D center)` is equal to `(Moodstocks ' team; will move over; over Google 's R&D center)`. Also, the triples with a low confidence score are discarded.
 
@@ -108,7 +108,7 @@ Finally, we come up with a set of rules that is less bigger than before. A call 
 
 ![png](hello.png)
 
-I’ve also implemented yourself a basic front end where you can input any size of text and select whether you have to prune the rules (by using domination). Let me know if you’re interested to contributed by email (go to About section)!
+I’ve also implemented a basic front end where you can input any size of text and select whether you want to prune the rules (by using domination) or not. Email me (check About section) if you’re interested to contribute!
 
 ![png](hello3.png)
 
