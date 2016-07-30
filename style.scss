@@ -18,9 +18,14 @@ html {
 }
 
 body {
-	background: $white;
-  font: 18px/1.4 $helvetica;
-  color: $darkGray;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 300;
+    background-color: #fdfdfd;
+    background: $white;
+    font: 18px/1.4 $helvetica;
+    color: $darkGray;
 }
 
 .container {
@@ -287,6 +292,25 @@ footer {
 {
     margin: 0 auto;
     display: block;
+}
+
+.posts .post-link 
+{
+    font-size: 20px;
+    letter-spacing: -1px;
+    line-height: 1;
+}
+
+a:hover 
+{
+    text-decoration: underline;
+}
+
+.posts .post-date 
+{
+    display: block;
+    font-size: 15px;
+    color: #818181;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
