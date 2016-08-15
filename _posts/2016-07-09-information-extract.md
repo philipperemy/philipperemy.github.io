@@ -108,10 +108,6 @@ Finally, we come up with a set of rules that is less bigger than before. A call 
 
 ![png](hello.png)
 
-I’ve also implemented a basic front end where you can input any size of text and select whether you want to prune the rules (by using domination) or not. Email me (check About section) if you’re interested to contribute!
-
-![png](hello3.png)
-
 ## References
 
 - [http://nlp.stanford.edu/pubs/2015angeli-openie.pdf](http://nlp.stanford.edu/pubs/2015angeli-openie.pdf)
