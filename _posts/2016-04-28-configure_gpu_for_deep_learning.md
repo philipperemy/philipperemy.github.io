@@ -2,7 +2,7 @@
 layout: post
 title: Configuration of a GPU for Deep Learning (Theano)
 
-excerpt: Easy tutorial on how to configure properly a GPU for Deep Learning with Ubuntu 14.04 x64 and GTX 460 (this card does not support of CuDNN).
+excerpt: Easy tutorial on how to configure properly a GPU for Deep Learning with Ubuntu 14.04 x64 and GTX 460 (this card does not support CuDNN).
 ---
 
 I assume that you are running a freshly installed version of Ubuntu or Kubuntu 14.04 LTS x64 and that you have a NVIDIA GPU (at least GTX 460). GTX 980 and Titan X should be better :)
