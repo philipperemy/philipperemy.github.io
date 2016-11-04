@@ -68,7 +68,7 @@ Lets assume the same matrix $$\mathcal{X} \in \mathbb{R}^{dt} \sim \mathcal{MVN}
  
 The goal is to find the time indices $$t_{o1}, ..., t_{on}$$ of the outliers in the augmented matrix $$\mathcal{X}$$.
 
-We find an accuracy of 1, hit rate of 1 and precision of 1. The system is very well-suited for this particular task. The code is available on GitHub.
+We find an accuracy of 1, hit rate of 1 and precision of 1. The system is very well-suited for this particular task. The code is available here: [https://gist.github.com/philipperemy/b8a7b7be344e447e7ee6625fe2fdd765](https://gist.github.com/philipperemy/b8a7b7be344e447e7ee6625fe2fdd765).
 
 ## Example 2: Multivariate normal distribution with nonidentity covariance matrix
 
