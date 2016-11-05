@@ -2,7 +2,7 @@
 layout: post
 title: Deep Learning (Machine Learning) applied to Tinder
 
-excerpt: We will look at Convolutional Neural Networks, with a fun example of training them to automatically swipe left/right based on a scraped dataset of 200 thousand of pictures from Instagram.
+excerpt: We will look at Convolutional Neural Networks, with a fun example of training them to automatically swipe left/right based on a scraped dataset of thousands of pictures from Instagram.
 ---
 
 ![png](/images/tinder/tinder-1.png){: .center-image }
@@ -23,7 +23,7 @@ We have approximately 151k images taken from Instagram and Tinder. Our problem i
 ![png](/images/tinder/7.png){: .center-image }
 ![png](/images/tinder/8.png){: .center-image }
 
-Not too bad right? We want to create a model that can predict the label (LIKE or NOPE) associated to each image. For this, we use what we call an image classification model.
+Not too bad right? We want to create a model that can predict the label (LIKE or NOPE) associated to each image. For this, we use what we call an image classification model and more precisely a Convolutional Neural Network here.
 
 ## Deep Learning Model part
 
@@ -36,11 +36,11 @@ Here is how the output of our image classification model looks like:
 
 Okay I don't get it. Let's say we have a perfect model with 100% accuracy. We feed some random pictures of Tinder. It's going to be classified as NOPE all the time according to how the dataset is defined?
 
-The answer is a partial yes. It translates in the fact that not only the model can predict the class (LIKE or NOPE) but also it can give a confidence percentage. For the second picture, the LIKE conviction reaches 99.84% while it tops at 96.46% for the first picture. We can make the conclusion that the model is less sure (to some extent) for the first picture. Empirically, the model will always output values with a very high confidence (either close to 100 or close to 0). It can lead to a wrong analysis if not taken seriously. The trick here is to specify a low threshold, say 40% slighly lower than the default 50%, for which all photos above this limit will be categorized as LIKE. This also increases the number of times the model will output a LIKE value from a Tinder picture (If we don't do that, we only rely on True Negatives for our predictions).
+The answer is a partial yes. It translates in the fact that not only the model can predict the class (LIKE or NOPE) but also it can give a confidence percentage. For the second picture, the LIKE conviction reaches 99.84% while it tops at 96.46% for the first picture. We can make the conclusion that the model is less sure (to some extent) for the first picture. Empirically, the model will always output values with a very high confidence (either close to 100 or close to 0). It can lead to a wrong analysis if not taken seriously. The trick here is to specify a low threshold, say 40% slightly lower than the default 50%, for which all photos above this limit will be categorized as LIKE. This also increases the number of times the model will output a LIKE value from a Tinder picture (If we don't do that, we only rely on True Negatives for our predictions).
 
 ## Auto Swiper
 
-Now that we have an image classification model that takes as input an image and spits out a confidence number (0 means not attractive at all, 100 for super attractive), let's attack the auto swiper part.
+Now that we have an image classification model that takes as input an image and spits out a confidence number (0 means not attractive at all, 100 for super attractive), let's attack the Auto Swiper part.
 
 
 A profile usually consists in a combination of more than one picture. We consider that if at least one picture has the status LIKE, we swipe right. If all the pictures are marked as NOPE by the classification model, we swipe left. We don't make any analysis based on the descriptions and/or age. The whole bot can swipe several times per second, more than any human could do.
@@ -162,7 +162,7 @@ First, thanks for reading! I hope you guys now have a clearer understanding of h
 
 If you'd liked to learn more on the technical part, I strong advice you to check the [Stanford University CS231 course](http://cs231n.stanford.edu/).
 
-The source code of the auto swiper (Tinder bot) is available [here](https://github.com/philipperemy/Deep-Learning-Tinder). I invite you to star it, fork it and contribute! 
+The source code of the Auto Swiper (Tinder Bot) is available [here](https://github.com/philipperemy/Deep-Learning-Tinder). I invite you to star it, fork it and contribute! 
 
 Some ways of improvement are:
 
