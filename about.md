@@ -29,4 +29,4 @@ Jeff Dean's keyboard has two keys: 1 and 0.
 
 ### Contact me
 
-[premy@cogent.co.jp](mailto:premy@cogent.co.jp)
+[premy.enseirb@gmail.com](mailto:premy.enseirb@gmail.com)
