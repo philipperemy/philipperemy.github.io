@@ -4,11 +4,13 @@ title: About
 permalink: /about/
 ---
 
-Research engineer / scientist in mathematical statistics, machine learning and computer vision. Currently working at [Cogent Labs, Tokyo, Japan](http://cogent.co.jp).
+This page is outdated. For an updated version, visit: [here](http://philipperemy.github.io/me/).
+
+Research engineer in Machine Learning. Currently working at [Cogent Labs, Tokyo, Japan](http://cogent.co.jp).
 
 ### Interests
 
-Bayesian Statistics, Operational Research, Computer Vision, Deep Learning, Machine Learning, Particle Markov Chain Monte Carlo, Applied Mathematics, Mathematical Finance.
+Bayesian Statistics, Computer Vision, Deep Learning, Machine Learning, Monte Carlo methods, Applied Mathematics.
 
 ### Funny facts about Yann LeCun
 
