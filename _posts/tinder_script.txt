@@ -1,0 +1,23 @@
+
+FB_ID = #####
+FB_AUTH_TOKEN = #####
+MODEL_API_HOST = http://#####:5000/
+MODEL_ID = 20161105-220902-c710
+TINDER_TOKEN = #####
+Successfully connected to Tinder servers.
+
+Name = #####, Age = 30, Location = Tokyo, Japan
+GET http://images.gotinder.com/577b7e7021eea430125afd12/b9d1adec-65bc-4325-9eed-961fa33f46de.jpg
+Predictions =  {LIKE = 75.27, NOPE = 24.73}
+GET http://images.gotinder.com/577b7e7021eea430125afd12/e372da8c-dd1b-4ddd-a31e-9d9d2ee36f41.jpg
+Predictions =  {LIKE = 3.03, NOPE = 96.97}
+-> SWIPE RIGHT (LIKE) - At least one was LIKE > 40.0
+
+Name = #####, Age = 31, Location = Tokyo, Japan
+GET http://images.gotinder.com/54dd932a39a6bf767896ceed/f164aa9f-3db4-4234-bbff-fca02abb2a17.jpg
+Predictions = {LIKE = 0.99, NOPE = 99.01}
+GET http://images.gotinder.com/54dd932a39a6bf767896ceed/5fe17713-0e2d-46cd-888e-a76af3f81b31.jpg
+Predictions = {LIKE = 0.26, NOPE = 99.74}
+GET http://images.gotinder.com/54dd932a39a6bf767896ceed/b5d3c851-8c26-4221-83a9-e849abb97604.jpg
+Predictions = {LIKE = 0.29, NOPE = 99.71}
+-> SWIPE LEFT (NOPE) - No one was LIKE > 40.0
